@@ -19,7 +19,10 @@ if (isset($_FILES['fotoNaam']) && $_FILES['fotoNaam']['error'] == 0)
 {
   if ($_FILES['fotoNaam']['type'] == 'image/jpg' ||
       $_FILES['fotoNaam']['type'] == 'image/jpeg' ||
-      $_FILES['fotoNaam']['type'] == 'image/pjepg')
+      $_FILES['fotoNaam']['type'] == 'image/pjepg' ||
+      $_FILES['fotoNaam']['type'] == 'image/png' ||
+      $_FILES['fotoNaam']['type'] == 'image/webp' ||
+     $_FILES['fotoNaam']['type'] == 'image/gif')
   {
       //wat is de fysieke map voor de foto's
       $map = __DIR__ . "/uploads/";
